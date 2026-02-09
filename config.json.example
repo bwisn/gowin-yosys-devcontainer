@@ -1,0 +1,13 @@
+{
+    "project_name": "led",
+    "top_module": "top",
+    "sources": [
+        "src/"
+    ],
+    "cst_file": "tangnano20k.cst",
+    "device": "GW2AR-LV18QN88C8/I7",
+    "pnr_family": "GW2A-18C",
+    "pack_family": "GW2A-18C",
+    "synth_family": "gw2a",
+    "board": "tangnano20k"
+}

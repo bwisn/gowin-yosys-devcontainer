@@ -1,0 +1,31 @@
+{
+    "name": "yosys-dev",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "remoteUser": "developer",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/developer/workspace,type=bind",
+    "workspaceFolder": "/home/developer/workspace",
+    "runArgs": [
+        "--net=host",
+        "--device=/dev/bus/usb",
+        "--privileged",
+        "-e",
+        "DISPLAY=${localEnv:DISPLAY}"
+    ],
+    "mounts": [
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind",
+        "source=${localEnv:HOME}/.Xauthority,target=/home/developer/.Xauthority,type=bind"
+    ],
+    "containerEnv": {
+        "DISPLAY": "${localEnv:DISPLAY}"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mshr-h.veriloghdl"
+            ]
+        }
+    }
+}

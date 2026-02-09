@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Gowin: Synthesize",
+            "type": "shell",
+            "command": "./build.sh synthesize",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Gowin: Flash",
+            "type": "shell",
+            "command": "./build.sh flash",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Gowin: Synthesize & Flash",
+            "type": "shell",
+            "command": "./build.sh all",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
