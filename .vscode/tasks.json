@@ -5,10 +5,7 @@
             "label": "Gowin: Synthesize",
             "type": "shell",
             "command": "build synthesize",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": []
         },
         {
@@ -22,7 +19,10 @@
             "label": "Gowin: Synthesize & Flash",
             "type": "shell",
             "command": "build all",
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "problemMatcher": []
         }
     ]
