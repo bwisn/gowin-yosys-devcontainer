@@ -4,7 +4,7 @@
         {
             "label": "Gowin: Synthesize",
             "type": "shell",
-            "command": "./build.sh synthesize",
+            "command": "build synthesize",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -14,14 +14,14 @@
         {
             "label": "Gowin: Flash",
             "type": "shell",
-            "command": "./build.sh flash",
+            "command": "build flash",
             "group": "build",
             "problemMatcher": []
         },
         {
             "label": "Gowin: Synthesize & Flash",
             "type": "shell",
-            "command": "./build.sh all",
+            "command": "build all",
             "group": "build",
             "problemMatcher": []
         }
