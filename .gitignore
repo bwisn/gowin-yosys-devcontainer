@@ -1,3 +1,5 @@
 *.json
 *.fs
 *.history
+!.vscode/*.json
+
